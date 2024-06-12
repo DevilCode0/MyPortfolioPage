@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SendMessage from "./Components/SendMessage";
+import Projects from "./Components/Projects";
 export default function Home() {
   return (
     <>
@@ -38,7 +39,7 @@ export default function Home() {
               </a>
             </div>
             <a
-              href="https://next.s3d340.com/s/4tnpXKCwPnyptbF"
+              href="https://next.s3d340.com/s/R7CzqR9dBDi3pgM"
               className="mt-4 inline-block text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-700 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out"
             >
               Download my CV
@@ -49,6 +50,7 @@ export default function Home() {
           <div className="bg-slate-300 rounded-full size-96"></div>
         </div>
       </div>
+      <Projects />
       <SendMessage />
     </>
   );

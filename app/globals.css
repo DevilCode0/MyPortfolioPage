@@ -6,4 +6,7 @@
     .input {
         @apply bg-slate-800 rounded-sm m-3
     }
+    .inputEroor {
+        @apply border border-red-500 bg-slate-800 rounded-sm m-3
+    }
 }
