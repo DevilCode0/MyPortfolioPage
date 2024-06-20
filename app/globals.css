@@ -9,4 +9,13 @@
     .inputEroor {
         @apply border border-red-500 bg-slate-800 rounded-sm m-3
     }
+    .card-title{
+        @apply text-left text-lg pb-2
+    }
+    .card-body{
+        @apply text-gray-400
+    }
+    .title{
+        @apply text-3xl pb-20
+    }
 }

@@ -1,6 +1,7 @@
 "use client";
 import axios from "axios";
 import React from "react";
+import { motion } from "framer-motion";
 export default function SendMessage() {
   const [infomis, setinfomis] = React.useState("");
   async function handleSubmit(e: any) {
@@ -46,8 +47,13 @@ export default function SendMessage() {
       });
   }
   return (
-    <form onSubmit={handleSubmit} className="p-10">
-      <h1 className="text-3xl pb-10">Send a message</h1>
+    <motion.form
+      initial={{ x: 100, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      onSubmit={handleSubmit}
+      className="m-10 p-3 border border-gray-700 rounded-md bg-gray-950"
+    >
+      <h1 className="text-3xl pl-10 p-5">Send a message</h1>
       <input
         type="text"
         name="name"
@@ -84,15 +90,15 @@ export default function SendMessage() {
         cols={10}
         rows={3}
         placeholder="Message"
-        className="input w-full"
+        className="input w-11/12"
         onClick={(e) => {
           e.currentTarget.className = "input w-full";
         }}
       />
       <h2 className="text-green-600">{infomis}</h2>
-      <button className="mt-4 inline-block text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-700 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out w-28 text-center">
+      <button className="ml-5 m-5 inline-block text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-700 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out w-28 text-center">
         Send
       </button>
-    </form>
+    </motion.form>
   );
 }

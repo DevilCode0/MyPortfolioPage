@@ -1,13 +1,16 @@
 import Image from "next/image";
 import SendMessage from "./Components/SendMessage";
 import Projects from "./Components/Projects";
+import AboutMe from "./Components/AboutMe";
 export default function Home() {
   return (
     <>
       <div className="h-screen flex items-center">
-        <div className="xl:w-1/2 md:w-full justify-center flex">
-          <div className="text-white p-12 rounded-lg w-5/6">
-            <h1 className="text-5xl xl:text-7xl">Saad Alkathiri</h1>
+        <div className="xl:w-1/2 max-md:w-full justify-center flex">
+          <div className="text-white p-12 w-5/6">
+            <h1 className="text-5xl xl:text-7xl drop-shadow-glow ">
+              Saad Alkathiri
+            </h1>
             <p className="p-2">
               Software engineer with a strong foundation in computer programming
               and experience in web development, devops, and docker
@@ -46,10 +49,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="xl:w-1/2 md:w-full justify-center flex phone:max-md:hidden">
-          <div className="bg-slate-300 rounded-full size-96"></div>
-        </div>
+        <div className="xl:w-1/2 md:w-full justify-center flex phone:max-md:hidden"></div>
       </div>
+      <AboutMe />
       <Projects />
       <SendMessage />
     </>
