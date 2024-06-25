@@ -4,14 +4,19 @@ import Picture1 from "./img/Screenshot 2024-06-21 004106.png";
 import Picture2 from "./img/Screenshot 2024-06-21 004132.png";
 import Picture3 from "./img/Screenshot 2024-06-21 004200.png";
 import Picture4 from "./img/Screenshot 2024-06-21 004223.png";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Portfolio",
+  description: "My Portfolio Website",
+};
 export default function Portfolio() {
   return (
     <>
       <Header />
-      <div className="m-10 border border-gray-700 rounded-md bg-gray-950 lg:flex">
+      <div className="m-10 border border-gray-700 rounded-md bg-gray-950 lg:flex max-sm:m-5">
         <div className="lg:w-2/3 border-r border-gray-700">
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="text-5xl">Portfolio Website</h1>
             <p className="pb-5 card-body">
               This project Is being used and updated
@@ -23,7 +28,7 @@ export default function Portfolio() {
               intuitive and engaging digital experiences.
             </p>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Goal of the Project</h1>
             <p>
               The primary goal of this project is to present my skills,
@@ -33,7 +38,7 @@ export default function Portfolio() {
               development and design technologies.
             </p>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Key Features</h1>
             <ul className="list-disc list-inside">
               <li>
@@ -54,7 +59,7 @@ export default function Portfolio() {
               </li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Program Languages and Tools Used</h1>
             <ul className="list-disc list-inside">
               <li>React: For building the user interface.</li>
@@ -71,7 +76,7 @@ export default function Portfolio() {
               <li>MongoDB: For managing and storing content data.</li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Conclusion</h1>
             <p>
               This portfolio website effectively demonstrates my capabilities in

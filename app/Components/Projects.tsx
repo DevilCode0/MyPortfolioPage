@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
+
 export default function Projects() {
   const [Select, setSelect] = React.useState("empty");
   const router = useRouter();
@@ -29,15 +30,15 @@ export default function Projects() {
           </div>
           <div
             onClick={() => router.push("/Projects/Buildify")}
-            className="m-4 p-3 border border-gray-700 rounded-md hover:bg-gray-800"
+            className="m-4 p-3 border border-gray-700 rounded-md hover:bg-gray-800 cursor-pointer"
             onMouseOver={() => setSelect("Buildify")}
           >
             <h1 className="float-right">May 2024</h1>
             <h1 className="card-title">Buildify</h1>
             <p className="card-body">
-              My second graduation project for my bachelor's degree It's an
-              application for creating CVs and making authentication links for
-              your certificates
+              My second graduation project for my bachelor&apos;s degree
+              It&apos;s an application for creating CVs and making
+              authentication links for your certificates
             </p>
           </div>
           <div
@@ -60,7 +61,7 @@ export default function Projects() {
             <h1 className="float-right">January 2022</h1>
             <h1 className="card-title">Library store website</h1>
             <p className="card-body">
-              A graduation project for my associate's degree.
+              A graduation project for my associate&apos;s degree.
             </p>
           </div>
         </div>
@@ -93,8 +94,8 @@ export default function Projects() {
         >
           <h1 className="text-xl p-3">Buildify</h1>
           <p>
-            My second graduation project for my bachelor's degree It's an
-            application for creating CVs and making authentication links for
+            My second graduation project for my bachelor&apos;s degree It&apos;s
+            an application for creating CVs and making authentication links for
             your certificates.
           </p>
           <ul className="list-disc list-inside">
@@ -126,8 +127,9 @@ export default function Projects() {
         >
           <h1 className="text-xl p-3">Library store website</h1>
           <p>
-            A graduation project for my associate's degree. We used HTML, CSS,
-            and JavaScript for the front-end, and PHP and SQL for the back-end.
+            A graduation project for my associate&apos;s degree. We used HTML,
+            CSS, and JavaScript for the front-end, and PHP and SQL for the
+            back-end.
           </p>
         </motion.div>
       </div>

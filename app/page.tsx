@@ -42,7 +42,7 @@ export default function Home() {
               </a>
             </div>
             <a
-              href="https://next.s3d340.com/s/R7CzqR9dBDi3pgM"
+              href="https://next.s3d340.com/s/LppJa2K7ZgdGwtZ"
               className="mt-4 inline-block text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-700 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out"
             >
               Download my CV

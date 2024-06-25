@@ -1,12 +1,17 @@
 import Header from "@/app/Components/Header";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Home Server",
+  description: "My Home Server",
+};
 export default function page() {
   return (
     <>
       <Header />
-      <div className="m-10 border border-gray-700 rounded-md bg-gray-950">
+      <div className="m-10 border border-gray-700 rounded-md bg-gray-950 max-sm:m-5">
         <div className=" border-gray-700">
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="text-5xl">Home Server</h1>
             <p className="pb-5 card-body">
               This project Is being used and updated
@@ -18,7 +23,7 @@ export default function page() {
               including smart home automation, DNS, Git, VPN, and NextCloud.
             </p>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Goal of the Project</h1>
             <p>
               The primary goal of this project is to create a reliable and
@@ -28,7 +33,7 @@ export default function page() {
               high availability for essential home and development services.
             </p>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Key Features</h1>
             <ul className="list-disc list-inside">
               <li>
@@ -58,7 +63,7 @@ export default function page() {
               </li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Program Languages and Tools Used</h1>
             <ul className="list-disc list-inside">
               <li>React: For building the user interface.</li>
@@ -75,7 +80,7 @@ export default function page() {
               <li>MongoDB: For managing and storing content data.</li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Conclusion</h1>
             <p>
               The home server project demonstrates the effective use of Docker

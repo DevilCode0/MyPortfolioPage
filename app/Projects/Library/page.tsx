@@ -12,23 +12,28 @@ import Picture11 from "./img/Picture11.png";
 import Picture12 from "./img/Picture12.png";
 import Picture13 from "./img/Picture13.png";
 import Picture16 from "./img/Picture16.png";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Library",
+  description: "E-COMMERCE Platform for Educational and Recreational Books",
+};
 export default function Library() {
   return (
     <>
       <Header />
-      <div className="m-10 border border-gray-700 rounded-md bg-gray-950 lg:flex">
+      <div className="m-10 border border-gray-700 rounded-md bg-gray-950 lg:flex max-sm:m-5">
         <div className="lg:w-2/3 border-r border-gray-700">
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="text-4xl pb-5 max-sm:title">
               E-COMMERCE Platform for Educational and Recreational Books
             </h1>
             <p className=" text-lg">
-              My second graduation project for my bachelor's degree It's an
-              application for creating CVs and making authentication links for
-              your certificates.
+              My second graduation project for my bachelor&apos;s degree
+              It&apos;s an application for creating CVs and making
+              authentication links for your certificates.
             </p>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Introduction</h1>
             <p>
               This project represents the beginning of my career in programming
@@ -39,16 +44,17 @@ export default function Library() {
             </p>
           </div>
 
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Project Idea</h1>
             <p>
-              The project's primary goal is to create a user-friendly website
-              that facilitates the purchase of educational and recreational
-              books. The platform aims to encourage reading and provide a
-              seamless shopping experience for students and book enthusiasts.
+              The project&apos;s primary goal is to create a user-friendly
+              website that facilitates the purchase of educational and
+              recreational books. The platform aims to encourage reading and
+              provide a seamless shopping experience for students and book
+              enthusiasts.
             </p>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Objectives</h1>
             <ul className="list-disc list-inside">
               <li>
@@ -57,7 +63,7 @@ export default function Library() {
               <li>Ensure ease of use for the website </li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Tools and Technologies</h1>
             <ul className="list-disc list-inside">
               <li>WampServer: For creating a local server environment.</li>
@@ -76,7 +82,7 @@ export default function Library() {
               </li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Programming Languages</h1>
             <ul className="list-disc list-inside">
               <li>PHP.</li>
@@ -85,7 +91,7 @@ export default function Library() {
               <li>JavaScript</li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Development Model</h1>
             <p>
               Incremental Development: Chosen because it allows for easy
@@ -93,7 +99,7 @@ export default function Library() {
               time.
             </p>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Team</h1>
             <ul className="list-disc list-inside">
               <li>Saad Alkathiri</li>
@@ -101,7 +107,7 @@ export default function Library() {
               <li>Fares AlQahtani </li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Conclusion</h1>
             <p>
               This project has been a valuable learning experience, helping us

@@ -6,19 +6,24 @@ import Picture3 from "./img/Picture3.png";
 import Picture4 from "./img/Picture4.png";
 import Picture5 from "./img/Picture5.png";
 import Picture6 from "./img/Picture6.png";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Buildify",
+  description: "CV/Resume Sharing and Authentication Application",
+};
 export default function Buildify() {
   return (
     <>
       <Header />
-      <div className="m-10 border border-gray-700 rounded-md bg-gray-950 lg:flex">
+      <div className="m-10 border border-gray-700 rounded-md bg-gray-950 lg:flex max-sm:m-5">
         <div className="lg:w-2/3 border-r border-gray-700">
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="text-5xl">Buildify</h1>
             <p className="pb-5 card-body">
               CV/Resume Sharing and Authentication Application
             </p>
-            <p className="text-lg">
+            <p className="text-lg ">
               This project is a CV/Resume Sharing and Authentication Application
               designed to help individuals manage and share their resumes/CVs
               while ensuring the authenticity of the information. The
@@ -27,7 +32,7 @@ export default function Buildify() {
               potential employees.
             </p>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Goal of the Project</h1>
             <p>
               The primary goal of the project is to develop an application that
@@ -37,11 +42,11 @@ export default function Buildify() {
               hiring process and reducing fraudulent claims.
             </p>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Key Features</h1>
             <ul className="list-disc list-inside">
               <li>
-                Createing CVs/Resumes: Users can create and update their
+                Creating CVs/Resumes: Users can create and update their
                 CVs/resumes.
               </li>
               <li>
@@ -63,7 +68,7 @@ export default function Buildify() {
               </li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Program Languages and Tools Used</h1>
             <ul className="list-disc list-inside">
               <li>React.js</li>
@@ -75,17 +80,14 @@ export default function Buildify() {
               <li>Android Studio.</li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Team</h1>
             <ul className="list-disc list-inside">
-              <li>WampServer: For creating a local server environment.</li>
-              <li>phpMyAdmin: For database management. </li>
               <li>Saad Alkathiri</li>
               <li>Marouf Alsubaie</li>
-              <li>Supervisors: Eng. Ahmed Altalhi, Eng. Fahad Sharahili</li>
             </ul>
           </div>
-          <div className="p-12 border-b border-gray-700">
+          <div className="projects-grid">
             <h1 className="title p-2">Conclusion</h1>
             <p>
               The CV/Resume Sharing and Authentication Application enhances the
