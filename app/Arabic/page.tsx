@@ -4,23 +4,22 @@ import Projects from "./Components/Projects";
 import AboutMe from "./Components/AboutMe";
 export default function Home() {
   return (
-    <>
-      <a href="/Arabic" className="float-right p-4 pr-10">
-        عربي
+    <div dir="rtl">
+      <a href="./" className="float-right p-4 pr-10">
+        English
       </a>
       <div className="h-screen flex items-center">
         <div className="xl:w-1/2 max-md:w-full justify-center flex">
           <div className="text-white p-12 w-5/6">
-            <h1 className="text-5xl xl:text-7xl drop-shadow-glow ">
-              Saad Alkathiri
+            <h1 className="text-5xl xl:text-7xl drop-shadow-glow pb-10">
+              سعد الكثيري
             </h1>
             <p className="p-2">
-              Software engineer with a strong foundation in computer programming
-              and experience in web development, devops, and docker
-              containerization. Seeking an opportunity to contribute my
-              technical expertise and passion for software production. Committed
-              to delivering high-quality solutions and continuously expanding my
-              knowledge in the ever-evolving field of software engineering.
+              مهندس برمجيات ذو أساس قوي في برمجة الحاسوب وخبرة في تطوير الويب،
+              والعمليات البرمجية، وتدوير الحاويات باستخدام Docker. أسعى للحصول
+              على فرصة للمساهمة بخبرتي التقنية وشغفي بإنتاج البرمجيات. ملتزم
+              بتقديم حلول عالية الجودة وتوسيع معرفتي باستمرار في مجال هندسة
+              البرمجيات المتطور باستمرار.
             </p>
             <div className="flex pt-11">
               <a href="https://www.linkedin.com/in/saad-alkathiri/">
@@ -48,7 +47,7 @@ export default function Home() {
               href="https://next.s3d340.com/s/LppJa2K7ZgdGwtZ"
               className="mt-4 inline-block text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-sky-500 to-blue-700 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out"
             >
-              Download my CV
+              تحميل سيرتي الذاتية
             </a>
           </div>
         </div>
@@ -57,6 +56,6 @@ export default function Home() {
       <AboutMe />
       <Projects />
       <SendMessage />
-    </>
+    </div>
   );
 }

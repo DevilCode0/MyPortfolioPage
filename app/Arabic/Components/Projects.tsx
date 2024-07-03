@@ -16,53 +16,48 @@ export default function Projects() {
       <div className="flex">
         <div className="w-1/2 max-lg:w-full">
           <div
-            onClick={() => router.push("/Projects/Portfolio")}
+            onClick={() => router.push("Arabic/Projects/Portfolio")}
             className="m-4 p-3 border border-gray-700 rounded-md hover:bg-gray-800 cursor-pointer"
             onMouseOver={() => {
               setSelect("Portfolio");
             }}
           >
-            <h1 className="float-right">June 2024</h1>
+            <h1 className="float-right">يونيو 2024</h1>
             <h1 className="card-title">Portfolio page</h1>
-            <p className="card-body">
-              A beige to show my experience and skills
-            </p>
+            <p className="card-body">صفحة لعرض خبرتي ومهاراتي</p>
           </div>
           <div
-            onClick={() => router.push("/Projects/Buildify")}
+            onClick={() => router.push("Arabic/Projects/Buildify")}
             className="m-4 p-3 border border-gray-700 rounded-md hover:bg-gray-800 cursor-pointer"
             onMouseOver={() => setSelect("Buildify")}
           >
-            <h1 className="float-right">May 2024</h1>
+            <h1 className="float-right">مايو 2024</h1>
             <h1 className="card-title">Buildify</h1>
             <p className="card-body">
-              My second graduation project for my bachelor&apos;s degree
-              It&apos;s an application for creating CVs and making
-              authentication links for your certificates
+              مشروع التخرج لشهادة البكالوريوس. إنه تطبيق لإنشاء السير الذاتية
+              وإنشاء روابط توثيق للشهادات
             </p>
           </div>
           <div
-            onClick={() => router.push("/Projects/Server")}
+            onClick={() => router.push("Arabic/Projects/Server")}
             className="m-4 p-3 border border-gray-700 rounded-md hover:bg-gray-800 cursor-pointer"
             onMouseOver={() => setSelect("Server")}
           >
-            <h1 className="float-right">December 2022</h1>
+            <h1 className="float-right">ديسمبر 2022</h1>
             <h1 className="card-title">Home Server</h1>
             <p className="card-body">
-              A file server with ZFS redundant storage, hosting more than 30
+              خادم ملفات مع تخزين زائدي باستخدام ZFS، يستضيف أكثر من 30 حاوية
               Docker
             </p>
           </div>
           <div
-            onClick={() => router.push("/Projects/Library")}
+            onClick={() => router.push("Arabic/Projects/Library")}
             className="m-4 p-3 border border-gray-700 rounded-md hover:bg-gray-800 cursor-pointer"
             onMouseOver={() => setSelect("Library")}
           >
-            <h1 className="float-right">January 2022</h1>
-            <h1 className="card-title">Library store website</h1>
-            <p className="card-body">
-              A graduation project for my associate&apos;s degree.
-            </p>
+            <h1 className="float-right">يناير 2022</h1>
+            <h1 className="card-title">موقع مكتبة</h1>
+            <p className="card-body">مشروع تخرج لشهادة الدبلوم</p>
           </div>
         </div>
         <motion.div
@@ -74,12 +69,9 @@ export default function Projects() {
           hidden={Select !== "Portfolio"}
         >
           <h1 className="text-xl p-3">Portfolio page</h1>
-          <p>
-            A showcase of my expertise in programming and design, highlighting
-            my achievements in creating intuitive digital experiences.
-          </p>
+          <p>عرض لخبرتي في البرمجة والتصميم، مع تسليط الضوء على إنجازاتي.</p>
           <ul className="list-disc list-inside">
-            <p>Crafted using :</p>
+            <p>تم إنشاؤه باستخدام</p>
             <li>React</li>
             <li>Next.js</li>
             <li>Tailwind CSS</li>
@@ -94,9 +86,8 @@ export default function Projects() {
         >
           <h1 className="text-xl p-3">Buildify</h1>
           <p>
-            My second graduation project for my bachelor&apos;s degree It&apos;s
-            an application for creating CVs and making authentication links for
-            your certificates.
+            مشروعي الثاني للتخرج لشهادة البكالوريوس. إنه تطبيق لإنشاء السير
+            الذاتية وإنشاء روابط توثيق لشهاداتك.
           </p>
           <ul className="list-disc list-inside">
             <li>React</li>
@@ -125,7 +116,7 @@ export default function Projects() {
           className="w-1/2 m-4 p-3 border border-gray-700 rounded-md max-lg:hidden"
           hidden={Select !== "Library"}
         >
-          <h1 className="text-xl p-3">Library store website</h1>
+          <h1 className="text-xl p-3">موقع مكتبة</h1>
           <p>
             A graduation project for my associate&apos;s degree. We used HTML,
             CSS, and JavaScript for the front-end, and PHP and SQL for the

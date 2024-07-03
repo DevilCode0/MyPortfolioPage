@@ -1,4 +1,4 @@
-import Header from "@/app/Components/Header";
+import Header from "@/app/Arabic/Components/Header";
 import Image from "next/image";
 import Picture1 from "./img/Picture1.png";
 import Picture4 from "./img/Picture4.png";

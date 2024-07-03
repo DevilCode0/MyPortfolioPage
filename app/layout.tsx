@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     template: "%s | Saad Alkathiri",
   },
   description: "Portfolio page for Saad",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({

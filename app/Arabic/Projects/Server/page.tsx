@@ -1,4 +1,4 @@
-import Header from "@/app/Components/Header";
+import Header from "@/app/Arabic/Components/Header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -63,6 +63,7 @@ export default function page() {
               </li>
             </ul>
           </div>
+
           <div className="projects-grid">
             <h1 className="title p-2">Conclusion</h1>
             <p>
